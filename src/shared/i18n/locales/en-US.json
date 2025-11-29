@@ -1,0 +1,15 @@
+{
+  "appTitle": "Simple Todo",
+  "appSubtitle": "Keep track of what matters and stay on top of it.",
+  "addTodoPlaceholder": "Add a todo",
+  "addTodo": "Add",
+  "filterAll": "All",
+  "filterActive": "Active",
+  "filterCompleted": "Completed",
+  "emptyState": "No todos yet. Add your first task.",
+  "edit": "Edit",
+  "cancel": "Cancel",
+  "remove": "Remove",
+  "toggleCompleted": "Toggle completed",
+  "language": "Language"
+}

@@ -1,0 +1,15 @@
+{
+  "appTitle": "Egyszerű teendők",
+  "appSubtitle": "Kövesd a fontos feladatokat és maradj naprakész.",
+  "addTodoPlaceholder": "Új teendő hozzáadása",
+  "addTodo": "Hozzáadás",
+  "filterAll": "Mind",
+  "filterActive": "Aktív",
+  "filterCompleted": "Kész",
+  "emptyState": "Nincsenek még teendők. Add hozzá az elsőt!",
+  "edit": "Szerkesztés",
+  "cancel": "Mégse",
+  "remove": "Törlés",
+  "toggleCompleted": "Készre jelölés",
+  "language": "Nyelv"
+}
