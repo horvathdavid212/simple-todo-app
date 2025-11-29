@@ -1,12 +1,50 @@
-# React + TypeScript + Vite
+# Simple Todo App (Vite + React + TypeScript)
 
-This template provides a minimal setup to get React working in Vite with TypeScript, HMR, and some ESLint rules.
+Feature-first Todo app with localStorage persistence and bilingual UI (en-US / hu-HU), built with Vite and vanilla CSS.
 
-Currently, two official plugins are available:
+## Features
+- Add, edit, toggle, and remove todos.
+- Filters: all / active / completed.
+- Persistence to `localStorage`.
+- Language switcher (English, Magyar) with persisted locale.
+- Vanilla CSS with feature-scoped styles and shared primitives.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
+- React 18 + TypeScript + Vite
+- ESLint (TypeScript, React Hooks, React Refresh)
+- Vanilla CSS (no UI frameworks)
 
-## React Compiler
+## Getting Started
+```bash
+npm install
+npm run dev
+# open http://localhost:5173
+```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Scripts
+- `npm run dev` – start dev server
+- `npm run build` – production build
+- `npm run preview` – preview production build
+- `npm run lint` – run eslint
+
+## Project Structure (excerpt)
+```
+src/
+  app/                 # app shell, providers, language switcher
+  features/todos/      # todo feature (model + UI)
+  shared/              # reusable UI, i18n, helpers
+  styles/              # global variables, base, layout
+```
+
+## i18n
+- Translations live in `src/shared/i18n/locales/en-US.json` and `hu-HU.json`.
+- Locale is persisted in `localStorage` and selectable via the header dropdown.
+
+## Persistence
+- Todos are stored in `localStorage` under `todos:v1` via `storage.ts`.
+
+## Linting
+- ESLint with TypeScript + React Hooks + React Refresh; unused vars warn (allow `_` prefixes for unused args).
+
+## Notes
+- No UI framework; component styles are colocated with components/features.
