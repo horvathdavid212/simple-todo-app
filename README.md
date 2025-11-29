@@ -2,6 +2,8 @@
 
 Feature-first Todo app with localStorage persistence and bilingual UI (en-US / hu-HU), built with Vite and vanilla CSS.
 
+<img width="1118" height="620" alt="image" src="https://github.com/user-attachments/assets/6f62460f-2a9b-42e4-aaf0-e8f84d569515" />
+
 ## Features
 - Add, edit, toggle, and remove todos.
 - Filters: all / active / completed.
